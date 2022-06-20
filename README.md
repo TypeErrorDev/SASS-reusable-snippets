@@ -16,7 +16,8 @@
 1. In the terminal, run `npm init`
 2. In the package.json file, change the script object to read:
 
-```json "scripts": {
+```json
+"scripts": {
     "script-name": "sass --watch pathToMainIndex.scss:pathToStyles.css"
   },
 ```
