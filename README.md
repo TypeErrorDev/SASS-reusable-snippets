@@ -1,6 +1,6 @@
 # SASS Tips and Tricks to setting up!
 
-##Setting up SASS with NPM already installed:
+## Setting up SASS with NPM already installed:
 
 1. Run in terminal: ` npm install sass -g`
 2. Create your index.html and then create a sass folder and add your index.scss inside
@@ -11,7 +11,7 @@
 
 ---
 
-##Creating your own run script for SASS
+## Creating your own run script for SASS
 
 1. In the terminal, run `npm init`
 2. In the package.json file, change the script object to read:
