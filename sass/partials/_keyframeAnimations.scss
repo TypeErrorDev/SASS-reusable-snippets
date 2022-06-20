@@ -1,0 +1,27 @@
+/* ===== Mixin ===== */
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+/* ===== Usage ===== */
+.main {
+  @include keyframes(background) {
+    0% {
+      background: white;
+    }
+    50% {
+      background: lightblue;
+    }
+    100% {
+      background: royalblue;
+    }
+  }
+}

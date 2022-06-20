@@ -12,4 +12,53 @@
   }
 }
 
+/* ===== Mixin ===== */
+/* ===== Usage ===== */
+.vertical-centered-element {
+  display: flex;
+  align-items: center;
+}
+
+.horizontally-centered-element {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+/* ===== Mixin ===== */
+/* ===== Usage ===== */
+@-webkit-keyframes background {
+  0% {
+    background: white;
+  }
+  50% {
+    background: lightblue;
+  }
+  100% {
+    background: royalblue;
+  }
+}
+@-moz-keyframes background {
+  0% {
+    background: white;
+  }
+  50% {
+    background: lightblue;
+  }
+  100% {
+    background: royalblue;
+  }
+}
+@keyframes background {
+  0% {
+    background: white;
+  }
+  50% {
+    background: lightblue;
+  }
+  100% {
+    background: royalblue;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

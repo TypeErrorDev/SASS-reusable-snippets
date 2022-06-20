@@ -1,3 +1,9 @@
+# Partials Table of Contents:
+
+1. Flexbox
+2. Simple Keyframe Animation
+3. Media Query
+
 # SASS Tips and Tricks to setting up!
 
 ## Setting up SASS with NPM already installed:

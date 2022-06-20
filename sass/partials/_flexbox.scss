@@ -1,0 +1,41 @@
+/* ===== Mixin ===== */
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  @content;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @content;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+  @content;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+  @content;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+  @content;
+}
+
+/* ===== Usage ===== */
+.vertical-centered-element {
+  @include flex-center-vert;
+}
+
+.horizontally-centered-element {
+  flex-direction: column;
+  @include flex-center-vert;
+}
