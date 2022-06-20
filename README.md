@@ -1,2 +1,12 @@
 # SASS reusable snippets
- Compiling a bunch of SASS reusable snippets that I stumble upon online or experimented with
+
+Setting up SASS with NPM already installed:
+
+1. Run in terminal: npm install sass -g
+2. Create your index.html and then create a sass folder and add your index.scss inside
+3. Create a folder inside your sass folder, and create a index.scss and another partial.scss file
+4. Once that is done, run your watch cmd: sass --watch sass/index.scss:css/styles.css
+5. Verify that your css folder was created
+6. Verify that your styles.css file (and the styles.css.map file) was created and has /_# sourceMappingURL=styles.css.map _/ automatically included in the file
+
+---
