@@ -1,6 +1,6 @@
 # Partials Table of Contents:
 
-1. [Flexbox] (https://github.com/TypeErrorDev/SASS-reusable-snippets/blob/main/sass/partials/_flexbox.scss)
+1. [Flexbox](https://github.com/TypeErrorDev/SASS-reusable-snippets/blob/main/sass/partials/_flexbox.scss)
 2. [Simple Keyframe Animation](https://github.com/TypeErrorDev/SASS-reusable-snippets/blob/main/sass/partials/_keyframeAnimations.scss)
 3. [Media Query](https://github.com/TypeErrorDev/SASS-reusable-snippets/blob/main/sass/partials/_mediaquery.scss)
 
