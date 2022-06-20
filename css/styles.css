@@ -1,0 +1,15 @@
+.main {
+  background: red;
+}
+@media only screen and (min-width: 768px) {
+  .main {
+    background: green;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .main {
+    background: blue;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

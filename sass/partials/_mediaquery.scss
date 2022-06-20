@@ -1,0 +1,37 @@
+// THIS IS THE MIXIN TEXT FOR THE MEDIAQUERY
+@mixin layout($breakpoint) {
+  // $breakpoint is simply a variable that can have several values as the argument
+
+  @if $breakpoint==tablet {
+    // if the argument == tablet, then it'll run the code below
+
+    @media only screen and (min-width: 768px) {
+      //regular CSS media query declaration
+
+      @content;
+      //resource for @content: https://sass-lang.com/documentation/at-rules/mixin#content-blocks
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+// THIS IS THE USE OF THE MIXIN
+.main {
+  background: red;
+  // normal styling code here
+
+  @include layout(tablet) {
+    background: green;
+    // responsive code for tablet viewport i.e. 768px
+  }
+
+  @include layout(desktop) {
+    background: blue;
+    // responsive code for desktop viewport i.e. 1024px
+  }
+}

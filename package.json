@@ -1,0 +1,19 @@
+{
+  "name": "sass-reusable-snippets",
+  "version": "1.0.0",
+  "description": "Compiling a bunch of SASS reusable snippets that I stumble upon online or experimented with",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --watch sass/index.scss:css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TypeErrorDev/SASS-reusable-snippets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TypeErrorDev/SASS-reusable-snippets/issues"
+  },
+  "homepage": "https://github.com/TypeErrorDev/SASS-reusable-snippets#readme"
+}
