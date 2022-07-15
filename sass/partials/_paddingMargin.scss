@@ -1,0 +1,22 @@
+//  margin and padding for all 4 sides, starting at 5 and ending at 25
+
+$dimensions: (
+  m: "margin",
+  p: "padding",
+);
+$directions: (
+  t: "top",
+  r: "right",
+  b: "bottom",
+  l: "left",
+);
+@each $dim in $dimensions {
+  @each $dir in $directions {
+    @for $i from 1 through 5 {
+      $size: $i * 5;
+      .#{nth($dim,1)}-#{nth($dir,1)}-#{$size} {
+        #{nth($dim,2)}-#{nth($dir,2)}: #{$size}px;
+      }
+    }
+  }
+}

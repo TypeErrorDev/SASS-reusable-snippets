@@ -1,0 +1,22 @@
+@function biggest_channel_only($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+  @if $r > $g and $r > $b {
+    @return rgb($r, 0, 0);
+  } @else if $g > $b and $g > $r {
+    @return rgb(0, $g, 0);
+  } @else {
+    @return rgb(0, 0, $b);
+  }
+}
+
+.cadetblue {
+  color: biggest_channel_only(cadetblue);
+}
+.peru {
+  color: biggest_channel_only(peru);
+}
+.lawngreen {
+  color: biggest_channel_only(lawngreen);
+}
