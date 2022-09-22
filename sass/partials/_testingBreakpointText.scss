@@ -1,17 +1,19 @@
-// Map breakpoints and text sizes through different media queries
+// Importing the required sass methods and the _PXtoREM.scss file
 @use "sass:math";
 @use "sass:map";
 @use "PXtoREM" as *;
+
 $breakpoints: (
-        mobile-sm: rem(320),
-        mobile-md: rem(375),
-        mobile-lg: rem(425),
-        tablet-sm: rem(768),
-        tablet-md: rem(1024),
-        desktop-sm: rem(1280),
-        desktop-md: rem(1440),
-        desktop-lg: rem(1920),
+  mobile-sm: rem(320),
+  mobile-md: rem(375),
+  mobile-lg: rem(425),
+  tablet-sm: rem(768),
+  tablet-md: rem(1024),
+  desktop-sm: rem(1280),
+  desktop-md: rem(1440),
+  desktop-lg: rem(1920),
 );
+
 @mixin font-size($breakpoint-map, $fs-base, $ratio) {
   @each $fs-breakpoint, $mq-width in $breakpoint-map {
     @if ($fs-breakpoint == "mobile-sm") {
@@ -64,6 +66,12 @@ $breakpoints: (
       }
     }
   }
-};
-
-@include font-size($breakpoints, 14, 1.125)
+}
+.test,
+.test2,
+.test3 {
+  margin-top: 15px;
+  @include font-size($breakpoints, 8, 1.25) {
+    color: red;
+  }
+}

@@ -21,17 +21,17 @@
 }
 
 // THIS IS THE USE OF THE MIXIN
-.main {
-  background: red;
-  // normal styling code here
+// .main {
+//   background: red;
+//   // normal styling code here
 
-  @include layout(tablet) {
-    background: green;
-    // responsive code for tablet viewport i.e. 768px
-  }
+//   @include layout(tablet) {
+//     background: green;
+//     // responsive code for tablet viewport i.e. 768px
+//   }
 
-  @include layout(desktop) {
-    background: blue;
-    // responsive code for desktop viewport i.e. 1024px
-  }
-}
+//   @include layout(desktop) {
+//     background: blue;
+//     // responsive code for desktop viewport i.e. 1024px
+//   }
+// }

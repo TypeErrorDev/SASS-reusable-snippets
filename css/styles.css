@@ -13,64 +13,8 @@
 
 /* ===== Mixin ===== */
 /* ===== Usage ===== */
-@-webkit-keyframes background {
-  0% {
-    background: white;
-  }
-  50% {
-    background: lightblue;
-  }
-  100% {
-    background: royalblue;
-  }
-}
-@-moz-keyframes background {
-  0% {
-    background: white;
-  }
-  50% {
-    background: lightblue;
-  }
-  100% {
-    background: royalblue;
-  }
-}
-@keyframes background {
-  0% {
-    background: white;
-  }
-  50% {
-    background: lightblue;
-  }
-  100% {
-    background: royalblue;
-  }
-}
-
-.main {
-  background: red;
-}
-@media only screen and (min-width: 768px) {
-  .main {
-    background: green;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .main {
-    background: blue;
-  }
-}
-
 /* ==== Mixin ===== */
 /* ===== Usage ===== */
-div {
-  position: absolute;
-  top: 100px;
-  right: 100px;
-  bottom: auto;
-  left: auto;
-}
-
 .m-t-5 {
   margin-top: 5px;
 }
@@ -241,6 +185,78 @@ div {
 
 .lawngreen {
   color: rgb(0, 252, 0);
+}
+
+.test,
+.test2,
+.test3 {
+  margin-top: 15px;
+}
+@media screen and (min-width: 20rem) {
+  .test,
+.test2,
+.test3 {
+    font-size: 0.5rem;
+    background-color: blue;
+    color: red;
+  }
+}
+@media screen and (min-width: 23.4375rem) {
+  .test,
+.test2,
+.test3 {
+    font-size: 0.625rem;
+    background-color: aqua;
+    color: red;
+  }
+}
+@media screen and (min-width: 26.5625rem) {
+  .test,
+.test2,
+.test3 {
+    font-size: 0.9765625rem;
+    color: red;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .test,
+.test2,
+.test3 {
+    font-size: 1.220703125rem;
+    color: red;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .test,
+.test2,
+.test3 {
+    font-size: 1.5258789063rem;
+    color: red;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .test,
+.test2,
+.test3 {
+    font-size: 1.9073486328rem;
+    color: red;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .test,
+.test2,
+.test3 {
+    font-size: 2.384185791rem;
+    color: red;
+  }
+}
+@media screen and (min-width: 120rem) {
+  .test,
+.test2,
+.test3 {
+    font-size: 2.9802322388rem;
+    color: red;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
