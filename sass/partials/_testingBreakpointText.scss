@@ -1,0 +1,69 @@
+// Map breakpoints and text sizes through different media queries
+@use "sass:math";
+@use "sass:map";
+@use "PXtoREM" as *;
+$breakpoints: (
+        mobile-sm: rem(320),
+        mobile-md: rem(375),
+        mobile-lg: rem(425),
+        tablet-sm: rem(768),
+        tablet-md: rem(1024),
+        desktop-sm: rem(1280),
+        desktop-md: rem(1440),
+        desktop-lg: rem(1920),
+);
+@mixin font-size($breakpoint-map, $fs-base, $ratio) {
+  @each $fs-breakpoint, $mq-width in $breakpoint-map {
+    @if ($fs-breakpoint == "mobile-sm") {
+      @media screen and (min-width: $mq-width) {
+        font-size: rem($fs-base);
+        background-color: blue;
+        @content;
+      }
+    } @else if ($fs-breakpoint == "mobile-md") {
+      @media screen and (min-width: $mq-width) {
+        font-size: rem($fs-base * $ratio);
+        background-color: aqua;
+        @content;
+      }
+    } @else if ($fs-breakpoint == "mobile-md") {
+      @media screen and (min-width: $mq-width) {
+        font-size: rem($fs-base * math.pow($ratio, 2));
+        background-color: green;
+        @content;
+      }
+    } @else if ($fs-breakpoint == "mobile-lg") {
+      @media screen and (min-width: $mq-width) {
+        font-size: rem($fs-base * math.pow($ratio, 3));
+        @content;
+      }
+    } @else if ($fs-breakpoint == "tablet-sm") {
+      @media screen and (min-width: $mq-width) {
+        font-size: rem($fs-base * math.pow($ratio, 4));
+        @content;
+      }
+    } @else if ($fs-breakpoint == "tablet-md") {
+      @media screen and (min-width: $mq-width) {
+        font-size: rem($fs-base * math.pow($ratio, 5));
+        @content;
+      }
+    } @else if ($fs-breakpoint == "desktop-sm") {
+      @media screen and (min-width: $mq-width) {
+        font-size: rem($fs-base * math.pow($ratio, 6));
+        @content;
+      }
+    } @else if ($fs-breakpoint == "desktop-md") {
+      @media screen and (min-width: $mq-width) {
+        font-size: rem($fs-base * math.pow($ratio, 7));
+        @content;
+      }
+    } @else if ($fs-breakpoint == "desktop-lg") {
+      @media screen and (min-width: $mq-width) {
+        font-size: rem($fs-base * math.pow($ratio, 8));
+        @content;
+      }
+    }
+  }
+};
+
+@include font-size($breakpoints, 14, 1.125)
