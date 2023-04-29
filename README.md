@@ -7,7 +7,7 @@
 5. [Padding and Margin function](https://github.com/TypeErrorDev/SASS-reusable-snippets/blob/main/sass/partials/_paddingmargin.scss)
 6. [Opposite Color on the ColorWheel](https://github.com/TypeErrorDev/SASS-reusable-snippets/blob/main/sass/partials/_ColorFunctions.scss)
 7. [Biggest RGB color](https://github.com/TypeErrorDev/SASS-reusable-snippets/blob/main/sass/partials/_ColorChannel.scss)
-8. [PX to REM converter](https://github.com/TypeErrorDev/SASS-reusable-snippets/blob/main/sass/partials/_pxtorem.scss)
+8. [PX to REM converter](https://github.com/TypeErrorDev/SASS-reusable-snippets/blob/main/sass/partials/_PXtoREM.scss)
 
 # SASS Tips and Tricks to setting up!
 
